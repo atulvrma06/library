@@ -3,18 +3,12 @@ pipeline {
     agent any
 
     tools {
+
         maven 'Maven'
+        jdk 'Java17'
     }
 
     stages {
-
-        stage('Clone') {
-
-            steps {
-
-                echo 'Cloning Repository'
-            }
-        }
 
         stage('Build') {
 
